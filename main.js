@@ -47,3 +47,13 @@ function loop() {
 
   clicked = false;
 }
+
+async function regSW() {
+  if ("serviceWorker" in navigator) {
+    try {
+      await navigator.serviceWorker.register("./service-worker.js");
+    } catch (e) {
+      console.log(`SW registration failed`);
+    }
+  }
+}
