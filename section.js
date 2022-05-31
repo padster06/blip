@@ -47,7 +47,7 @@ class Section {
   }
 
   checkColision(ang) {
-    if (ang >= this.vals.start - 0.2 && ang <= this.vals.end + 0.2) {
+    if (ang >= this.vals.start - 0.2 && ang <= this.vals.end + 0.25) {
       return true;
     }
     return false;

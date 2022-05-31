@@ -15,7 +15,7 @@ function begin() {
   display.fillRect(0, 0, canvas.clientWidth, canvas.height);
   section = new Section(150);
   blip = new Blip(0.025, 150, canvas);
-  document.addEventListener("click", (e) => {
+  document.body.addEventListener("click", (e) => {
     if (section.checkColision(blip.ang)) {
       section.reset();
       blip.speed += 0.002;
