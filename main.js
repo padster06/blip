@@ -26,7 +26,7 @@ function begin() {
       score = 0;
     }
   });
-  setInterval(loop, 1000 / 120);
+  setInterval(loop, 1000 / 300);
 }
 
 function loop() {
